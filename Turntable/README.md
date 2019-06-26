@@ -1,4 +1,4 @@
-# Scale
+# Turntable
 
 ![Turntable](https://raw.githubusercontent.com/NiryoRobotics/niryo_one_industrial_demonstrators/master/Turntable/turntable.png)
 
