@@ -1,4 +1,4 @@
-# Scale
+# Flipping
 
 ![Flipping](https://raw.githubusercontent.com/NiryoRobotics/niryo_one_industrial_demonstrators/master/Flipping/flipping.png)
 
