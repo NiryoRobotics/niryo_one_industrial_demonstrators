@@ -1,6 +1,6 @@
-# Industrial demonstrator
-
-You will find here four industrial demonstrator you can make with Niryo One
+# Niryo One Industrial Demonstrator
+s
+You will find here four industrial demonstrators you can make with Niryo One
 
 * A Tic Tac Toe game
 
@@ -36,4 +36,4 @@ In each folder you will find :
 
 
 
-Each file is available in english or in french
+Each file is available in English or in French
