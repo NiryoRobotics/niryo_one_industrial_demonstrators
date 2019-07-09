@@ -11,6 +11,9 @@ PCF8574 pcf8574_robot2(0x22); // Expander robot 2
 const int smDirectionPin = 2;
 const int smStepPin = 3;
 int smEnablePin = 7;
+const int sensor = 38;
+int sensor_state = HIGH;
+const int calibration_time = 10;
 
 void setup() {
   Serial.begin(9600); // Used for debug
@@ -90,6 +93,23 @@ void initializeMotor() {
   pinMode(smEnablePin, OUTPUT);
  
   digitalWrite(smEnablePin, HIGH); //Disbales the motor, so it can rest untill it is called uppond
+
+  pinMode(sensor, INPUT);
+
+  /**** Sensors calibration ****/
+  Serial.print("Calibration ");
+  for(int i = 0; i < calibration_time; i++){
+    Serial.print(".");
+    delay(1000);
+  }
+  Serial.println("Calibration succeed");
+
+  while(sensor_state == HIGH) {
+    rotate(1);
+    sensor_state = digitalRead(sensor);
+  }
+
+  rotate(-100);
 }
 
 int getBluetooth () {  
@@ -159,124 +179,126 @@ int readButtons() {
 void robot1Pick(int button_pressed) {
   switch (button_pressed) {
     case 0 : //Pos 0
-      rotate(button_pressed*107);      
+      rotate(button_pressed*267);      
       pcf8574_robot1.write(0, HIGH);
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107);
+      rotate(-button_pressed*267);
       break;
     case 1 : //Pos 1
-      rotate(button_pressed*107);      
+      rotate(button_pressed*267);      
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 2 : //Pos 2
-      rotate(button_pressed*107); 
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 3 : //Pos 3
-      rotate(button_pressed*107); 
+      Serial.println(button_pressed);
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 4 : //Pos 4
-      rotate(button_pressed*107); 
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 5 : //Pos 5
-      rotate(button_pressed*107); 
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 6 : //Pos 6
-      rotate(button_pressed*107); 
+      Serial.println(button_pressed);
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 7 : //Pos 7
-      rotate(button_pressed*107); 
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 8 : //Pos 8
-      rotate(button_pressed*107); 
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 9 : //Pos 9
-      rotate(button_pressed*107); 
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 10 : //Pos 10
-      rotate(button_pressed*107); 
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;
     case 11 : //Pos 11
-      rotate(button_pressed*107); 
+      rotate(button_pressed*267); 
       pcf8574_robot1.write(0, HIGH); // Pos 1
       delay(50);
       while(pcf8574_robot1.readButton(1) == LOW) {
         // Wait until robot 1 has finished is command 
       }
       pcf8574_robot1.write(0, LOW); // Stop sending the command
-      rotate(-button_pressed*107); 
+      rotate(-button_pressed*267); 
       break;  
   }
 }
