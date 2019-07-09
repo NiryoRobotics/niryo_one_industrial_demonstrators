@@ -1,5 +1,5 @@
 # Niryo One Industrial Demonstrator
-s
+
 You will find here four industrial demonstrators you can make with Niryo One
 
 * A Tic Tac Toe game
