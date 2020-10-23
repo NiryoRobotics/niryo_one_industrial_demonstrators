@@ -1,4 +1,4 @@
-# Niryo One Industrial Demonstrator
+# Niryo One Demonstrator
 
 You will find here four industrial demonstrators you can make with Niryo One
 
