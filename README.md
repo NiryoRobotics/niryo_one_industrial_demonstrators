@@ -1,8 +1,10 @@
 # Niryo One Demonstrator
 
-You will find here four industrial demonstrators you can make with Niryo One
+You will find here four demonstrators you can make with Niryo One
 
-* A Tic Tac Toe game
+* A vision Tic Tac Toe (vision kit needed)
+
+* A Tic Tac Toe (mechanical parts needed)
 
 * A pick and place industrial demonstrator with a scale in two formats
     
