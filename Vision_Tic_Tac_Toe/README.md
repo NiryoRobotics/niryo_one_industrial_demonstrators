@@ -3,7 +3,8 @@
 
 Time has come to fight a worthy opponent, the Niryo One, at Tic-Tac-Toe.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f4utZ7zoycw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Demonstrator video:
+[![Vision Tic-Tac-Toe Niryo One](https://img.youtube.com/vi/f4utZ7zoycw/maxresdefault.jpg)](https://www.youtube.com/watch?v=f4utZ7zoycw)
 
 This demonstrator uses our API TCP Python, the Niryo One as well as our Vision Set.
 
