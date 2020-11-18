@@ -1,6 +1,8 @@
 # Niryo One Demonstrator
 
-You will find here four demonstrators you can make with Niryo One
+You will find here five demonstrators you can make with Niryo One
+
+* Visual picking with Artificial Intelligence (vision kit needed + Tensorflow)
 
 * A vision Tic Tac Toe (vision kit needed)
 
