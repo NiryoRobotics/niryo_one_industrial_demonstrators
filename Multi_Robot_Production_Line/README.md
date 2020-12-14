@@ -38,13 +38,13 @@ Finally, calibrate the workspace.
 
 Before launching the program, four variables have to be modified in the robot.py:
 
-robot1_ip_address = <IP of the robot at the front>
+robot1_ip_address = [IP of the robot at the front]
 
-workspace1 = <the workspace name>
+workspace1 = [the workspace name]
 
-observation_pose = <the observation pose of the workspace in meters>
+observation_pose = [the observation pose of the workspace in meters]
 
-robot2_ip_address = <IP of the robot at the back>
+robot2_ip_address = [IP of the robot at the back]
 
   
 
@@ -118,11 +118,11 @@ The learning mode allows you to save positions. To get new positions, enter {--r
 
   
 
-The Conveyor Belt speed is adjustable. To do so, change the variable “conveyor_speed = <float from 0 to 100>”.
+The Conveyor Belt speed is adjustable. To do so, change the variable “conveyor_speed = [float from 0 to 100]”.
 
   
 
-The distance between the pawns is adjustable. To do so, change the variable: “conveyor_place_interval = <float in activation seconds of the Conveyor Belt>”
+The distance between the pawns is adjustable. To do so, change the variable: “conveyor_place_interval = "[float in activation seconds of the Conveyor Belt]"
 
   
 
@@ -142,11 +142,7 @@ The width of pawns’ distribution on the Conveyor Belt is adjustable. To do so,
 
 Why does the robot not detect the objects on the Conveyor Belt ? (The Conveyor Belt does not stop).
 
-  
-
 If the robot does not detect the objects placed on the Conveyor Belt, this might be due to the robot’s camera which cannot see the four landmarks of the workspace. Therefore, adjust the observation pose so the robot can see the four landmarks.
-
-  
 
 
 The Conveyor Belt doesn’t stop at the end of the program.
@@ -154,3 +150,9 @@ The Conveyor Belt doesn’t stop at the end of the program.
   
 
 In that case, relaunch the program and stop it again when the Conveyor Belt stops.
+
+
+
+
+
+[Check out our website for more details.](https://niryo.com/docs/niryo-one/niryo-one-industrial-demonstrators/multi-robot-production-line/)
