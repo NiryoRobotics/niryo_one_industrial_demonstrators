@@ -1,6 +1,8 @@
 # Niryo One Demonstrator
 
-You will find here five demonstrators you can make with Niryo One
+You will find here six demonstrators you can make with Niryo One
+
+* Multirobot production line example (Two robots + vision kit + conveyor needed)
 
 * Visual picking with Artificial Intelligence (vision kit needed + Tensorflow)
 
@@ -15,7 +17,6 @@ You will find here five demonstrators you can make with Niryo One
 	* With shelves
 
 * Use two robots to flip an object
-
 
 
 In each folder you will find :
